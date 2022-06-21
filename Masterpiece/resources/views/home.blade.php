@@ -4,8 +4,8 @@
     <div id="hero" class="hero overlay">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Your story begins from here.</h1>
-                <p>Your clients on the internet. Learn how to receive them.</p>
+                <h2>To make the life much better for our <span class="hero-span">SPECIAL</span> loved people</h2>
+                {{-- <p>Your clients on the internet. Learn how to receive them.</p> --}}
                 <a href="#" class="btn btn-border">Learn more</a>
             </div><!-- /.hero-text -->
         </div><!-- /.hero-content -->
@@ -17,11 +17,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-5">
-                        <h2>Responsive web design</h2>
-                        <p>Responsive Web design is the approach that suggests that design and development should respond to the user's behavior and environment based on screen size, platform and orientation. The practice consists of a mix of flexible grids and layouts, images and an intelligent use of CSS media queries</p>
+                        <h2>About Us</h2>
+                        <p>We have turned our personal experiance juicer into this website to be close to people who are like us, to work together to solve our problems and make life simpler and more beautiful. And always remember that you are the center of the universe becuase you are special.</p>
                     </div>
                     <div class="col-sm-7 hidden-xs">
-                        <img src="/img/ipad-pro.png" alt="">
+                        <img src="/img/homePage/about.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -32,60 +32,49 @@
                 <h2 class="heading-separator">Our Services</h2>
                 <p class="subheading-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                 <div class="row">
-                    <div class="col-md-3 col-xs-6">
+                    <div class="col-lg-4 col-md-3 col-xs-6">
                         <div class="service">
-                            <img src="/img/anchor.svg" alt="">
-                            <h3 class="service-title">Branding</h3>
-                            <p class="service-info"> Learn why your brand is a valuable component when it comes to your marketing communication and why you don't want to be without one.</p>
+                            <i class="fa-regular fa-heart fa-5x"></i>
+                            <h3 class="service-title">Caring</h3>
+                            <p class="service-info">We offer a holistic continuum of caring to individuals who are ready to make a commitment to be effective and special in our world.</p>
                         </div><!-- /.service -->
                     </div>
-                    <div class="col-md-3 col-xs-6">
+                    <div class="col-lg-4 col-md-3 col-xs-6">
                         <div class="service">
-                            <img src="/img/bycicle.svg" alt="">
-                            <h3 class="service-title">Design</h3>
-                            <p class="service-info">The strength of a design lies as much in the steps taken to create it as in the final result. </p>
+                            <img src="/img/basket.svg" alt="">
+                            <h3 class="service-title">Ecommerce</h3>
+                            <p class="service-info">You can shop to get all the things you need for your child from food, drinks and medical and life supplies.</p>
                         </div><!-- /.service -->
                     </div>
-                    <div class="col-md-3 col-xs-6">
+                    
+                    <div class="col-lg-4 col-md-3 col-xs-6">
                         <div class="service">
-                            <img src="/img/paper-plane.svg" alt="">
-                            <h3 class="service-title">Development</h3>
-                            <p class="service-info">Development is a way to make people aware of the services and/or products you are offering.</p>
+                            <i class="fa-regular fa-building fa-5x"></i>
+                            <h3 class="service-title">Clinics and centers</h3>
+                            <p class="service-info">We direct you to the clinic and the specialized center that suits your child to provide the best care for your child with the modernist methods.</p>
                         </div><!-- /.service -->
                     </div>
-                    <div class="col-md-3 col-xs-6">
+                </div><!-- End first row of services -->
+                <div class="row second-row-services">
+                    <div class="col-lg-4 col-md-3 col-xs-6">
                         <div class="service">
-                            <img src="/img/photo.svg" alt="">
-                            <h3 class="service-title">Photography</h3>
-                            <p class="service-info">Photographs are the legacy you leave for generations to come.</p>
+                            <i class="fa-regular fa-comments fa-5x"></i>
+                            <h3 class="service-title">Sharing experiences</h3>
+                            <p class="service-info">Sharing experiences with all those who have previous experiences similar to yours will certainly contribute to your child's development in the way you aspire to. </p>
                         </div><!-- /.service -->
                     </div>
-                    <div class="col-md-3 col-xs-6">
+                    <div class="col-lg-4 col-md-3 col-xs-6">
                         <div class="service">
                             <img src="/img/microphone.svg" alt="">
                             <h3 class="service-title">Support</h3>
                             <p class="service-info">A support network can include a variety of forms of interaction with a range of people who can support you in different ways. </p>
                         </div><!-- /.service -->
                     </div>
-                    <div class="col-md-3 col-xs-6">
+                    <div class="col-lg-4 col-md-3 col-xs-6">
                         <div class="service">
-                            <img src="/img/rocket.svg" alt="">
-                            <h3 class="service-title">Marketing</h3>
-                            <p class="service-info">Marketing is of vital importance to any business. It is the key process of researching, promoting and selling products or services to your target.</p>
-                        </div><!-- /.service -->
-                    </div>
-                    <div class="col-md-3 col-xs-6">
-                        <div class="service">
-                            <img src="/img/basket.svg" alt="">
-                            <h3 class="service-title">Ecommerce</h3>
-                            <p class="service-info">When customers are deciding on a purchase, they start by looking online.</p>
-                        </div><!-- /.service -->
-                    </div>
-                    <div class="col-md-3 col-xs-6">
-                        <div class="service">
-                            <img src="/img/chemestry.svg" alt="">
-                            <h3 class="service-title">Coding</h3>
-                            <p class="service-info">We use the best coding practices</p>
+                            <i class="fa-regular fa-face-smile-beam fa-5x"></i>
+                            <h3 class="service-title">Motivation</h3>
+                            <p class="service-info">Never give up, we have a dedicated team to keep your spirits high on this long journey with tremendous results.</p>
                         </div><!-- /.service -->
                     </div>
                 </div>
@@ -101,25 +90,25 @@
                 <div class="row">
                     <div class="col-sm-3 col-xs-6">
                         <div class="counter-item">
-                            <p class="counter" data-to="377" data-speed="2000">0</p>
-                            <h3>Cofee Cups</h3>
+                            <p class="counter" data-to="8000" data-speed="1000">0</p>
+                            <h3>million Adult autism spectrum</h3>
                         </div><!-- /.counter-item -->
                     </div>
                     <div class="col-sm-3 col-xs-6">
                         <div class="counter-item">
-                            <p class="counter" data-to="1204" data-speed="2000">0</p>       
-                            <h3>Projects completed</h3>
+                            <p class="counter" data-to="7000" data-speed="1000">0</p>       
+                            <h3>Down syndrome</h3>
                         </div> <!-- /.counter-item -->      
                     </div>
                     <div class="col-sm-3 col-xs-6">
                         <div class="counter-item">
-                            <p class="counter" data-to="459" data-speed="1000">0</p>
-                            <h3>Happy Clients</h3>
+                            <p class="counter" data-to="120000" data-speed="1000">0</p>
+                            <h3>Celiac disease</h3>
                         </div><!-- /.counter-item -->
                     </div>
                     <div class="col-sm-3 col-xs-6">
                         <div class="counter-item">
-                            <p class="counter" data-to="675" data-speed="1000">0</p>
+                            <p class="counter" data-to="430000" data-speed="1000">0</p>
                             <h3>Average Deal</h3>
                         </div><!-- /.counter-item -->
                     </div>

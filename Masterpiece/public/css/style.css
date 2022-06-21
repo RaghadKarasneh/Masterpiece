@@ -391,7 +391,7 @@ select {
 }
 
 .bootstrap-select.btn-group .dropdown-menu.inner {
-    position: static; *
+    position: static; 
     float: none;
     border: 0;
     padding: 0;
@@ -640,6 +640,9 @@ html, body {
 
 /* HEADER
 ================================================== */
+.container-fluied{
+    padding: 0 50px;
+}
 .site-header {
     position: absolute;
     padding: 50px 0 0;
@@ -654,7 +657,10 @@ html, body {
     line-height: 26px;
     color: #26272d;
 }
-
+.site-title img{
+    position: relative;
+    top: -35px;
+}
 .site-title:hover {
     color: #26272d;   
 }
@@ -671,8 +677,11 @@ html, body {
 .navbar-collapse {
     text-align: center;
 }
-
+.navbar-header{
+    height: 100px;
+}
 .navbar-nav {
+    margin-top: 30px;
     float: none;
     display: inline-block;
 }
@@ -680,10 +689,11 @@ html, body {
 .navbar-nav > li > a, 
 .slicknav_nav > li > a {
     padding: 0;
-    font-size: 16px;
+    font-size: 17px;
     position: relative;
-    color: #26272d;
+    color: #083b66;
     line-height: 26px;
+    font-weight: 700;
 }
 
 .site-header-white .navbar-nav > li > a,
@@ -716,7 +726,7 @@ html, body {
 .slicknav_open .slicknav_arrow,
 .slicknav_nav > li a:hover {
     background-color: transparent;
-    color: #6fc754;
+    color: #00bcd4;
 }
 
 .navbar-toggle {
@@ -749,7 +759,7 @@ html, body {
     border-radius: 0;
     min-width: 130px;
     border: 0;
-    border-top: 5px solid #6fc754;
+    border-top: 5px solid #00bcd4;
     top: 140%;
     transition: all 0.4s;
     -moz-transition: all 0.4s;
@@ -779,7 +789,7 @@ html, body {
 /* HERO
 ================================================== */
 .hero { 
-    background: url(../img/hero.jpg) no-repeat center / cover; 
+    background: url(/img/homePage/hero.jpg) no-repeat center / cover; 
     height: 100%;
     width: 100%;
     display: table;
@@ -811,25 +821,35 @@ html, body {
     text-align: center;
 }
 
-.hero-text h1 {
+.hero-text h2 {
     position: relative;
     margin: 0;
+    color:#083b66;
+    line-height: 1.5;
+    font-weight: 600;
 }
-
-.hero-text p {
+.hero-text .hero-span{
+    color: #00bcd4;
+}
+/* .hero-text p {
     position: relative;
     margin: 45px 0 30px;
     font-size: 20px;
     color: #26272d;
-}
+} */
 
 .hero-text .btn {
     position: relative;
     background-color: transparent;
+    margin-top: 50px;
+    color:#083b66;
+    border-color: #083b66;
+    transition: 0.5s all ease-in-out;
+    font-weight: 700;
 }
 
 .hero-text .btn:hover {
-    background-color: #26272d;
+    background-color: #00bcd4;
     color: #fff;
 }
 
@@ -891,7 +911,15 @@ html, body {
 .site-section {
    padding: 100px 0 140px;
 }
-
+.site-section h2{
+    color: #083b66;
+}
+.site-section p{
+    font-size: 20px;
+    font-weight: 300;
+    color: #083b66;
+    line-height: 1.5;
+}
 .subheading-text {
     font-size: 20px;
     font-style: italic;
@@ -924,7 +952,8 @@ html, body {
 .section-features img {
     position: absolute;
     right: 15px;
-    height: 380px;
+    height: 330px;
+    width: 400px;
 }
 
 /* Section: Services */
@@ -939,7 +968,9 @@ html, body {
 .service {
     min-height: 250px;
 }
-
+.second-row-services{
+    margin-top: 70px;
+}
 .service-title {
     margin: 35px 0 25px;
     font-size: 13px;

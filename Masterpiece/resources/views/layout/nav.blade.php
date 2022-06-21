@@ -114,11 +114,13 @@
 
     <header id="masthead" class="site-header">
         <nav id="primary-navigation" class="site-navigation">
-            <div class="container">
+            <div class="container-fluied">
 
                 <div class="navbar-header">
                    
-                    <a class="site-title"><span>Agency</span>Perfect</a>
+                    <a class="site-title">
+                      <img src="/img/logo.png" height="120px" width="120px">
+                    </a>
 
                 </div><!-- /.navbar-header -->
 
