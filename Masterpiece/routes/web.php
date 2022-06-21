@@ -21,3 +21,8 @@ use App\Http\Controllers\UserController;
 
 Route::get('/',[UserController::class,'homePageView']);
 Route::get('img/logo',[UserController::class,'imgView'])->name('img.displayImage');
+Route::get('/blog',[UserController::class,'blogView']);
+Route::get('/blog-post',[UserController::class,'blogPostView']);
+Route::get('/contact',[UserController::class,'contactView']);
+Route::get('/portfolio',[UserController::class,'portfolioView']);
+Route::get('/portfolio-item',[UserController::class,'portfolioItemView']);
