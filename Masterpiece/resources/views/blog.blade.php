@@ -21,7 +21,7 @@
                     <div class="col-md-8">
                         <article class="blog-post">
                             <a href="./blog-post">
-                                <img src="/img/portfolio-1.jpg" class="img-res" alt="">
+                                <img src="/img/dawn-syndrom.png" class="img-res" alt="">
                             </a>
                             <div class="post-content">
                                 <h3 class="post-title"><a href="./blog-post">12 Essential Free Sketch Plugins</a></h3>
@@ -44,7 +44,7 @@
                         </article><!-- /.blog-post -->
                         <article class="blog-post">
                             <a href="blog-post.html">
-                                <img src="/img/portfolio-2.jpg" class="img-res" alt="">
+                                <img src="/img/disability.png" class="img-res" alt="">
                             </a>
                             <div class="post-content">
                                 <h3 class="post-title"><a href="./blog-post">Customize WordPress Themes Easily</a></h3>
@@ -67,7 +67,7 @@
                         </article><!-- /.blog-post -->
                         <article class="blog-post">
                             <a href="blog-post.html">
-                                <img src="/img/portfolio-3.jpg" class="img-res" alt="">
+                                <img src="/img/caring-kids.jpg" class="img-res" alt="">
                             </a>
                             <div class="post-content">
                                 <h3 class="post-title"><a href="./blog-post">Creative Website Template PSD</a></h3>
@@ -129,14 +129,15 @@
                             <div class="widget widget-categories">
                                 <h4 class="widget-title">Categories</h4>
                                 <ul class="list-unstyled">
-                                    <li><a href="#">Inside The Lipsum <span>12</span></a></li>
-                                    <li><a href="#">Oscar Wilde<span>4</span></a></li>
-                                    <li><a href="#">Jeffrey Ween<span>2</span></a></li>
-                                    <li><a href="#">Responsive Design<span>1</span></a></li>
-                                    <li><a href="#">Development<span>9</span></a></li>
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">Jobs</a></li>
+                                    <li><a href="#">Blogs</a></li>
+                                    <li><a href="#">Clinics & Centers</a></li>
+                                    <li><a href="#">Parents' Experiences</a></li>
+                                    <li><a href="#">Motivation</a></li>
                                 </ul>
                             </div><!-- /.widget-categories -->
-                            <div class="widget widget-tags">
+                            {{-- <div class="widget widget-tags">
                                 <h4 class="widget-title">Tags</h4>
                                 <ul class="list-unstyled">
                                     <li><a href="#">Web Design</a></li>
@@ -145,7 +146,7 @@
                                     <li><a href="#">Responsive Design</a></li>
                                     <li><a href="#">Development</a></li>
                                 </ul>
-                            </div><!-- /.widget-tags -->
+                            </div><!-- /.widget-tags --> --}}
                         </div><!-- /.sidebar -->
                     </aside>
                 </div>

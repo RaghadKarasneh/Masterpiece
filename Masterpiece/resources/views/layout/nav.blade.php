@@ -128,12 +128,15 @@
 
                     <ul class="nav navbar-nav navbar-right">
 
-                        <li class="active"><a href="index.html" data-toggle="dropdown">Home</a></li>
-                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
+                        <li class="active"><a href="./" data-toggle="dropdown">Home</a></li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Catagories<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
 
                             <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                              <li><a href="./portfolio">Portfolio</a></li>
-                              <li><a href="./blog">Blog</a></li>
+                              <li><a href="">Jobs</a></li>
+                              <li><a href="./blog">Blogs</a></li>
+                              <li><a href="">Centers & Clincs</a></li>
+                              <li><a href="">Parents' Experiences</a></li>
+                              <li><a href="">Motivation</a></li>
                             </ul>
 
                         </li>

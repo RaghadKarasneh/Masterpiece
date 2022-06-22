@@ -898,7 +898,7 @@ html, body {
 }
 
 .blog-hero {
-    background: url(../img/blog-hero.jpg) no-repeat center / cover;     
+    background: url(../img/blogs.png) no-repeat center / cover;     
 }
 
 .contact-hero {
@@ -1106,8 +1106,12 @@ html, body {
 
 .newsletter-group .btn {
     min-width: 120px;
+    background-color: #00bcd4;
 }
-
+.newsletter-group .btn:hover {
+    min-width: 120px;
+    background-color: #083b66;
+}
 /* FOOTER
 ================================================== */
 .site-footer {
@@ -1170,7 +1174,7 @@ html, body {
 
 .list-unstyled li a:hover,
 .list-unstyled li.active a {
-    color: #6fc754;
+    color: #00bcd4;
 }
 
 /* Copyright */
@@ -1406,12 +1410,12 @@ a.linkedin-bg:hover {
 }
 
 .post-content .read-more:hover:after {
-    background-color: #6fc754; 
+    background-color: #00bcd4; 
 }
 
 .blog-post a:hover + .post-content .post-title a,
 .post-content a:hover {
-    color: #6fc754;
+    color: #00bcd4;
 }
 
 .post-meta {
@@ -1545,7 +1549,12 @@ a.linkedin-bg:hover {
     text-transform: uppercase;
     letter-spacing: 1px;   
 }
-
+.form-group .btn{
+    background-color: #00bcd4;
+}
+.form-group .btn:hover{
+    background-color: #143b66;
+}
 .widget .list-unstyled a:hover {
     padding-left: 15px;
 }

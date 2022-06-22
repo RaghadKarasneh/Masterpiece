@@ -120,8 +120,8 @@
         <section class="site-section section-portfolio">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="heading-separator">Latest Work</h2>
-                    <p class="subheading-text">This is some of our best work</p>
+                    <h2 class="heading-separator">Latest Blogs</h2>
+                    <p class="subheading-text">This is some of our best blogs</p>
                 </div>
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-xs-6">
