@@ -1,13 +1,14 @@
 @extends('layout.master')
 @section('title','Home')
+@section('css','blogs.css')
 @section('layout.content')
     <div id="hero" class="hero overlay subpage-hero blog-hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Blog</h1>
+                <h1>Blogs</h1>
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="./">Home</a></li>
-                  <li class="breadcrumb-item active">Blog</li>
+                  <li class="breadcrumb-item active">Blogs</li>
                 </ol>
             </div><!-- /.hero-text -->
         </div><!-- /.hero-content -->
@@ -31,14 +32,14 @@
                                 </div>
                                 <div class="post-meta">
                                     <span class="post-author">
-                                        <a href="#"><img class="img-res" src="/img/author.jpg" alt="">John Smith</a>
+                                        <a><img class="img-res" src="/img/author.jpg" alt="">John Smith</a>
                                     </span>
                                     <span class="post-date">
-                                        <a href=""><i class="fa fa-calendar" aria-hidden="true"></i>September 21, 2016</a>
+                                        <a><i class="fa fa-calendar" aria-hidden="true"></i>September 21, 2016</a>
                                         </span>
-                                    <span class="post-category">
+                                    {{-- <span class="post-category">
                                         <a href=""><i class="fa fa-folder" aria-hidden="true"></i>Web Design</a>
-                                    </span>
+                                    </span> --}}
                                 </div><!-- /.post-meta -->
                             </div><!-- /.post-content -->
                         </article><!-- /.blog-post -->
@@ -54,14 +55,14 @@
                                 </div>
                                 <div class="post-meta">
                                     <span class="post-author">
-                                        <a href="#"><img class="img-res" src="/img/author-3.jpg" alt="">Marc Jones</a>
+                                        <a><img class="img-res" src="/img/author-3.jpg" alt="">Marc Jones</a>
                                     </span>
                                     <span class="post-date">
-                                        <a href=""><i class="fa fa-calendar" aria-hidden="true"></i>August 25, 2016</a>
+                                        <a><i class="fa fa-calendar" aria-hidden="true"></i>August 25, 2016</a>
                                         </span>
-                                    <span class="post-category">
+                                    {{-- <span class="post-category">
                                         <a href=""><i class="fa fa-folder" aria-hidden="true"></i>Web Development</a>
-                                    </span>
+                                    </span> --}}
                                 </div><!-- /.post-meta -->
                             </div><!-- /.post-content -->
                         </article><!-- /.blog-post -->
@@ -77,14 +78,14 @@
                                 </div>
                                 <div class="post-meta">
                                     <span class="post-author">
-                                        <a href="#"><img class="img-res" src="/img/author-2.jpg" alt="">Linda Smith</a>
+                                        <a><img class="img-res" src="/img/author-2.jpg" alt="">Linda Smith</a>
                                     </span>
                                     <span class="post-date">
-                                        <a href=""><i class="fa fa-calendar" aria-hidden="true"></i>July 11, 2016</a>
+                                        <a><i class="fa fa-calendar" aria-hidden="true"></i>July 11, 2016</a>
                                         </span>
-                                    <span class="post-category">
+                                    {{-- <span class="post-category">
                                         <a href=""><i class="fa fa-folder" aria-hidden="true"></i>PSD Template</a>
-                                    </span>
+                                    </span> --}}
                                 </div><!-- /.post-meta -->
                             </div><!-- /.post-content -->
                         </article><!-- /.blog-post -->

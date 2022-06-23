@@ -98,6 +98,7 @@
     <!-- Custom styles for this template -->
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/@yield('css','')">
       <!-- Fontawesom
     ================================================== -->
     <script src="https://kit.fontawesome.com/7b836f378e.js" crossorigin="anonymous"></script>
@@ -128,14 +129,19 @@
 
                     <ul class="nav navbar-nav navbar-right">
 
-                        <li class="active"><a href="./" data-toggle="dropdown">Home</a></li>
+                        <li class="active"><a href="{{url('/')}}" data-toggle="dropdown">Home</a></li>
                         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Catagories<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
 
                             <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
                               <li><a href="">Jobs</a></li>
                               <li><a href="./blog">Blogs</a></li>
                               <li><a href="">Centers & Clincs</a></li>
-                              <li><a href="">Parents' Experiences</a></li>
+                              <li><a href="./experiences">Parents' Experiences</a>
+                                <ul class="dropdown-menu dropdown-menu-experiences" role="menu" aria-labelledby="menu1">
+                                  <li><a href="">Down Syndrom</a></li>
+                                  <li><a href="./blog">Autism</a></li>
+                                  <li><a href="">Centers & Clincs</a></li>
+                                </ul></li>
                               <li><a href="">Motivation</a></li>
                             </ul>
 

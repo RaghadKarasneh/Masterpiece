@@ -1,15 +1,15 @@
 @extends('layout.master')
 @section('title','Home')
 @section('layout.content')
-
-    <div id="hero" class="hero overlay subpage-hero blog-hero">
+@section('css','blogs.css')
+    <div id="hero" class="hero overlay subpage-hero portfolio-hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Blog</h1>
+                <h1>Blog Name</h1>
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="./">Home</a></li>
-                  <li class="breadcrumb-item"><a href="./blog">Blog</a></li>
-                  <li class="breadcrumb-item active">Blog post</li>
+                  <li class="breadcrumb-item"><a href="../">Home</a></li>
+                  <li class="breadcrumb-item"><a href="./blog">Blogs</a></li>
+                  <li class="breadcrumb-item active">Blog name</li>
                 </ol>
             </div><!-- /.hero-text -->
         </div><!-- /.hero-content -->
@@ -17,149 +17,86 @@
 
     <main id="main" class="site-main">
 
-        <section class="site-section subpage-site-section section-blog">
+        <section class="site-section subpage-site-section section-project">
+
             <div class="container">
                 <div class="row">
                     <div class="col-md-8">
-                        <article class="blog-post">
-                            <img src="/img/portfolio-1.jpg" class="img-res" alt="">
-                            <div class="post-content">
-                                <h2 class="post-title">12 Essential Free Sketch Plugins</h2>
-                                <p>Sketch Measure helps designers organize and outline their work for developers, project managers, and other team members.</p>
-                                <p>But this is also incredibly useful to lone wolves who design & code all of their projects. With the Measure plugin you can outline elements showing specific width/height dimensions to get proper measurements at a glance.</p>
-                                <p>This includes all page elements like buttons, text, icons, and even major parts of the artboard. With Sketch Measure you can even export pages into HTML/CSS with page styles in-tact. Granted there are Adobe tools that can do this too. But having all this functionality right in Sketch makes your job that much easier.</p>
-  
-                                <div class="post-meta">
-                                    <span class="post-author">
-                                        <a href="#"><img class="img-res" src="/img/author.jpg" alt=""> John Smith</a>
-                                    </span>
-                                    <span class="post-date">
-                                        <a href=""><i class="fa fa-calendar" aria-hidden="true"></i> September 21, 2016</a>
-                                        </span>
-                                    <span class="post-category">
-                                        <a href=""><i class="fa fa-folder" aria-hidden="true"></i> Web Design</a>
-                                    </span>
-                                </div><!-- /.post-meta -->
-                            </div><!-- /.post-content -->
-                        </article><!-- /.blog-post -->
-                        <div id="PostComments" class="post-comments">
-                            <h3>3 Comments</h3>
-                            <div class="post-comment">
+                        <div class="project-img">
+                            <img src="/img/blogs/down-blog/dawn1.png" class="img-res" alt="">
+                        </div><!-- /.project-img -->
+                        <div class="project-img">
+                            <img src="/img/blogs/down-blog/dawn2.png" class="img-res" alt="">
+                        </div><!-- /.project-img -->
+                        <div class="project-img">
+                            <img src="/img/blogs/down-blog/dawn3.png" class="img-res" alt="">
+                        </div><!-- /.project-img -->
 
-                                <img class="img-res" src="/img/author-2.jpg" alt="">
-
-                                <div class="post-comment-content">
-                                    
-                                    <div class="post-comment-content-details">
-                                        <p class="post-comment-author-name">Linda Smith</p>
-                                        <p class="post-comment-date"><i class="fa fa-calendar" aria-hidden="true"></i>Jan 2, at 19:00</p>
-                                    </div><!-- /.post-content-details -->
-                                    <p class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-
-                                    <p class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                    <div class="text-right comment-reply">
-                                        <a href="#">Reply</a>
-                                    </div>
-                                        
-                                </div><!-- /.post-comment-content --> 
-                            </div><!-- /.post-comment --> 
-                            <div class="replied">
-                                <div class="post-comment">
-
-                                    <img class="img-res" src="/img/author-3.jpg" alt="">
-
-                                    <div class="post-comment-content">
-                                        
-                                        <div class="post-comment-content-details">
-                                            <p class="post-comment-author-name">Marc Jones</p>
-                                            <p class="post-comment-date"><i class="fa fa-calendar" aria-hidden="true"></i>Jan 5, at 23:33</p>
-                                        </div><!-- /.post-content-details -->
-                                        <p class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-
-                                        <p class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                        <div class="text-right comment-reply">
-                                            <a href="#">Reply</a>
-                                        </div>
-                                            
-                                    </div><!-- /.post-comment-content --> 
-                                </div><!-- /.post-comment --> 
-                            </div><!-- /.replied -->
-                            <div class="post-comment">
-
-                                <img class="img-res" src="/img/author-4.jpg" alt="">
-
-                                <div class="post-comment-content">
-                                    
-                                    <div class="post-comment-content-details">
-                                        <p class="post-comment-author-name">Michael Sky</p>
-                                        <p class="post-comment-date"><i class="fa fa-calendar" aria-hidden="true"></i>Jan 5, at 11:45</p>
-                                    </div><!-- /.post-content-details -->
-                                    <p class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-
-                                    <p class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                    <div class="text-right comment-reply">
-                                        <a href="#">Reply</a>
-                                    </div>
-                                        
-                                </div><!-- /.post-comment-content --> 
-                            </div><!-- /.post-comment --> 
-                        </div><!-- /#PostComments -->
-                        <div class="respond">
-                            <h3>Post a Comment</h3>
-                            <form class="form-horizontal">
-                                <input class="form-control" type="text" placeholder="Your Name*" required>
-                                <input class="form-control" type="email" placeholder="Your Email" required>
-                                <textarea class="form-control form-control-comment" type="text" placeholder="Your Comment*" required></textarea>
-                                <button class="btn btn-green">Add a comment</button>
-                            </form>    
-                        </div><!-- /.respond -->
                     </div>
                     <aside class="col-md-4">
-                        <div class="sidebar">
-                            <div class="widget search-form">
-                                <h4 class="widget-title">Search the blog</h4>
-                                <form class="form-group">
-                                    <input type="text" class="form-control" placeholder="Search" required>
-                                    <button class="btn btn-green" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
-                                </form>
-                            </div><!-- /.search-form -->
-                            <div class="widget widget-recent-posts">
-                                <h4 class="widget-title">Recent posts</h4>
-                                <ul class="list-unstyled">
-                                    <li><a href="#">Inside The Lipsum</a></li>
-                                    <li><a href="#">Oscar Wilde</a></li>
-                                    <li><a href="#">Jeffrey Ween</a></li>
-                                    <li><a href="#">Responsive Design</a></li>
-                                    <li><a href="#">Development</a></li>
-                                </ul>
-                            </div><!-- /.widget-recent-posts -->
-                            <div class="widget widget-categories">
-                                <h4 class="widget-title">Categories</h4>
-                                <ul class="list-unstyled">
-                                    <li><a href="#">Inside The Lipsum <span>12</span></a></li>
-                                    <li><a href="#">Oscar Wilde<span>4</span></a></li>
-                                    <li><a href="#">Jeffrey Ween<span>2</span></a></li>
-                                    <li><a href="#">Responsive Design<span>1</span></a></li>
-                                    <li><a href="#">Development<span>9</span></a></li>
-                                </ul>
-                            </div><!-- /.widget-categories -->
-                            <div class="widget widget-tags">
-                                <h4 class="widget-title">Tags</h4>
-                                <ul class="list-unstyled">
-                                    <li><a href="#">Web Design</a></li>
-                                    <li><a href="#">Web Development</a></li>
-                                    <li><a href="#">PSD Template</a></li>
-                                    <li><a href="#">Responsive Design</a></li>
-                                    <li><a href="#">Development</a></li>
-                                </ul>
-                            </div><!-- /.widget-tags -->
-                        </div><!-- /.sidebar -->
+                        <div class="project-info">
+                            <h5>Description</h5>
+
+                            <p class="project-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+                            <div class="project-date-category">
+                                <p><span>Date:</span> March 1, 2017</p>
+                                <p><span>Category:</span> Branding, Graphic design</p>
+                            </div><!-- /.project-cat -->
+
+                            <a href="#" class="btn btn-gray">Visit Site</a>
+
+                            <div class="social-links">
+                                <a class="twitter-bg" href="#"><i class="fa fa-twitter"></i></a>
+                                <a class="facebook-bg" href="#"><i class="fa fa-facebook"></i></a>
+                                <a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a>
+                                <a class="linkedin-bg" href="#"><i class="fa fa-linkedin"></i></a>
+                            </div><!-- /.social-links -->
+                            
+                        </div><!-- /.project-description -->
                     </aside>
                 </div>
             </div>
-        </section><!-- /.section-portfolio -->
+            
+        </section><!-- /.section-project -->
+
+        {{-- <section class="site-section subpage-site-section section-related-projects">
+            <div class="container">
+                <div class="text-left">
+                    <h2>Related Projects</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="/img/portfolio-1.jpg" class="img-res" alt="">
+                            <h4 class="portfolio-item-title">Portfolio item</h4>
+                            <a href="portfolio-item.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="/img/portfolio-2.jpg" class="img-res" alt="">
+                            <h4 class="portfolio-item-title">Portfolio item</h4>
+                            <a href="portfolio-item.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="/img/portfolio-3.jpg" class="img-res" alt="">
+                            <h4 class="portfolio-item-title">Portfolio item</h4>
+                            <a href="portfolio-item.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="/img/portfolio-4.jpg" class="img-res" alt="">
+                            <h4 class="portfolio-item-title">Portfolio item</h4>
+                            <a href="portfolio-item.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.section-portfolio --> --}}
 
     </main><!-- /#main -->
-
-
 @endsection

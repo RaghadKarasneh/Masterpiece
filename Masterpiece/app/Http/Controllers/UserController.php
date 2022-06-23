@@ -18,13 +18,13 @@ class UserController extends Controller
     public function blogPostView(){
         return view('blog-post');
     }
+    public function experiencesView(){
+        return view('experiences');
+    }
     public function contactView(){
         return view('contact');
     }
     public function portfolioView(){
         return view('portfolio');
-    }
-    public function portfolioItemView(){
-        return view('portfolio-item');
     }
 }
