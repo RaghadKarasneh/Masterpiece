@@ -903,9 +903,11 @@ html, body {
 }
 
 .experience-hero {
-    background: url(/img/experiences/experience.png) no-repeat center / cover;     
+    background: url(https://irp-cdn.multiscreensite.com/4ea72d77/dms3rep/multi/AdobeStock_101945303.jpeg) no-repeat center / cover;     
 }
-
+.jobs-hero{
+    background: url(/img/jobs/jobs.png) no-repeat center / cover;
+}
 .blog-hero {
     background: url(../img/blogs.png) no-repeat center / cover;     
 }

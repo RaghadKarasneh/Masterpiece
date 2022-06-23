@@ -3,13 +3,13 @@
 @section('css','experiences.css')
 @section('layout.content')
 
-    <div id="hero" class="hero overlay subpage-hero experience-hero">
+    <div id="hero" class="hero overlay subpage-hero jobs-hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Parents' Experiences</h1>
+                <h1>Jobs</h1>
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="./">Home</a></li>
-                  <li class="breadcrumb-item active">Experiences</li>
+                  <li class="breadcrumb-item active">Jobs</li>
                 </ol>
             </div><!-- /.hero-text -->
         </div><!-- /.hero-content -->
@@ -22,8 +22,8 @@
                 <div class="row">
                     <div class="col-md-8">
                         <article class="blog-post">
-                            <img src="/img/experiences/down-experiance.png" class="img-res" alt="">
-                            <div class="post-content">
+                            <img src="/img/jobs/jobs-dawn.jpg" class="img-res" alt="">
+                            {{-- <div class="post-content">
                                 <h2 class="post-title">12 Essential Free Sketch Plugins</h2>
                                 <p>Sketch Measure helps designers organize and outline their work for developers, project managers, and other team members.</p>
                                 <p>But this is also incredibly useful to lone wolves who design & code all of their projects. With the Measure plugin you can outline elements showing specific width/height dimensions to get proper measurements at a glance.</p>
@@ -40,10 +40,10 @@
                                         <a href=""><i class="fa fa-folder" aria-hidden="true"></i> Web Design</a>
                                     </span>
                                 </div><!-- /.post-meta -->
-                            </div><!-- /.post-content -->
+                            </div><!-- /.post-content --> --}}
                         </article><!-- /.blog-post -->
                         <div id="PostComments" class="post-comments">
-                            <h3>3 Comments</h3>
+                            {{-- <h1>Jobs</h1> --}}
                             <div class="post-comment">
 
                                 <img class="img-res" src="/img/author-2.jpg" alt="">
@@ -105,12 +105,12 @@
                             </div><!-- /.post-comment --> 
                         </div><!-- /#PostComments -->
                         <div class="respond">
-                            <h3>Post a Comment</h3>
+                            <h3>Post a job</h3>
                             <form class="form-horizontal">
                                 <input class="form-control" type="text" placeholder="Your Name*" required>
                                 <input class="form-control" type="email" placeholder="Your Email" required>
                                 <textarea class="form-control form-control-comment" type="text" placeholder="Your Comment*" required></textarea>
-                                <button class="btn btn-green">Add a comment</button>
+                                <button class="btn">Add a comment</button>
                             </form>    
                         </div><!-- /.respond -->
                     </div>

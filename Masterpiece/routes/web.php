@@ -26,3 +26,4 @@ Route::get('/experiences',[UserController::class,'experiencesView']);
 Route::get('/contact',[UserController::class,'contactView']);
 Route::get('/portfolio',[UserController::class,'portfolioView']);
 Route::get('/blog-post',[UserController::class,'blogPostView']);
+Route::get('/jobs',[UserController::class,'jobsView']);

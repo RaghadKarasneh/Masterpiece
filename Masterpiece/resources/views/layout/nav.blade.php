@@ -133,7 +133,7 @@
                         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Catagories<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
 
                             <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                              <li><a href="">Jobs</a></li>
+                              <li><a href="./jobs">Jobs</a></li>
                               <li><a href="./blog">Blogs</a></li>
                               <li><a href="">Centers & Clincs</a></li>
                               <li><a href="./experiences">Parents' Experiences</a>
