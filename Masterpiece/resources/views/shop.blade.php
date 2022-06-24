@@ -1,13 +1,14 @@
 @extends('layout.master')
 @section('title','Home')
+@section('css','shop.css')
 @section('layout.content')
-    <div id="hero" class="hero overlay subpage-hero portfolio-hero">
+    <div id="hero" class="hero overlay subpage-hero shop-hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Portfolio</h1>
+                <h1>Shop</h1>
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="./">Home</a></li>
-                  <li class="breadcrumb-item active">Portfolio</li>
+                  <li class="breadcrumb-item active">Shop</li>
                 </ol>
             </div><!-- /.hero-text -->
         </div><!-- /.hero-content -->

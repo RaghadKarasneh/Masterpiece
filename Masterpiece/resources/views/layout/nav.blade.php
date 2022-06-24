@@ -129,25 +129,27 @@
 
                     <ul class="nav navbar-nav navbar-right">
 
-                        <li class="active"><a href="{{url('/')}}" data-toggle="dropdown">Home</a></li>
+                        <li><a href="./" data-toggle="">Home</a></li> 
+                        {{-- data-toggle="dropdown" --}}
+                        {{--  class="active" --}}
                         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Catagories<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
 
                             <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
                               <li><a href="./jobs">Jobs</a></li>
                               <li><a href="./blog">Blogs</a></li>
-                              <li><a href="">Centers & Clincs</a></li>
+                              <li><a href="./centers&clinics">Centers & Clinics</a></li>
                               <li><a href="./experiences">Parents' Experiences</a>
                                 <ul class="dropdown-menu dropdown-menu-experiences" role="menu" aria-labelledby="menu1">
-                                  <li><a href="">Down Syndrom</a></li>
-                                  <li><a href="./blog">Autism</a></li>
-                                  <li><a href="">Centers & Clincs</a></li>
+                                  <li><a href="./experiences">Down Syndrom</a></li>
+                                  <li><a href="./experiences">Autism</a></li>
+                                  <li><a href="./experiences">Centers & Clincs</a></li>
                                 </ul></li>
-                              <li><a href="">Motivation</a></li>
+                              <li><a href="./motivation">Motivation</a></li>
                             </ul>
 
                         </li>
-                        <li><a href="./portfolio">Portfolio</a></li>
-                        <li><a href="./blog">Blog</a></li>
+                        <li><a href="./shop">Shop</a></li>
+                        {{-- <li><a href="./blog">Blog</a></li> --}}
                         <li><a href="./contact">Contact</a></li>
                         {{-- <li><a href="ui-elements.html">UI Elements</a></li> --}}
 

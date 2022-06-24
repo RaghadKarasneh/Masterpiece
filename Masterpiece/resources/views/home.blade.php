@@ -116,7 +116,7 @@
             </div>
             
         </section><!-- /.section-map-feature -->
-
+{{-- 
         <section class="site-section section-portfolio">
             <div class="container">
                 <div class="text-center">
@@ -182,7 +182,7 @@
                     </div>
                 </div>
             </div>
-        </section><!-- /.section-portfolio -->
+        </section><!-- /.section-portfolio --> --}}
 
         <section class="site-section section-newsletter text-center">
             <div class="container">

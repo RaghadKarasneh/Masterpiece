@@ -37,4 +37,16 @@ class UserController extends Controller
      public function jobsView(){
         return view('jobs');
     }
+    //View Centers & Clinics Page
+    public function centers_clinicsView(){
+        return view('centers&clinics');
+    }
+    //View Motivation Page
+    public function motivationView(){
+        return view('motivation');
+    }
+    //View Shop Page
+    public function shopView(){
+        return view('shop');
+    }
 }

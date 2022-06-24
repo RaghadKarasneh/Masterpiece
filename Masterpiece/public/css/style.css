@@ -47,7 +47,7 @@ a {
 
 a:focus,
 a:hover {
-    color: #6fc754;
+    color: #00bcd4;
     outline: 0 none;
     text-decoration: none;
 }
@@ -109,7 +109,7 @@ p + p {
 }
 
 .btn-green {
-    background-color: #6fc754;
+    background-color: #00bcd4;
     color: #fff;  
 }
 
@@ -123,7 +123,7 @@ button.btn:focus {
 
 .btn-gray:hover,
 .btn-gray:focus {
-    background-color: #6fc754;
+    background-color: #00bcd4;
     color: #fff;    
 }
 
@@ -232,7 +232,7 @@ input[type=radio] {
     width: 20px;
     border-radius: 3px;
     color: #fff;
-    background-color: #6fc754;
+    background-color: #00bcd4;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -269,12 +269,12 @@ input[type=radio] {
 
 .checkbox [type="checkbox"]:checked:focus + label:before,
 .checkbox [type="checkbox"]:not(:checked):focus + label:before {
-    border: 1px dotted #6fc754;
+    border: 1px dotted #00bcd4;
 }
 
 .checkbox [type="checkbox"]:not(:checked) + label:hover:before,
 .checkbox [type="checkbox"]:checked + label:hover:before {
-    border: 1px solid #6fc754;
+    border: 1px solid #00bcd4;
 }
 
 /* Radiobutton fields */
@@ -322,7 +322,7 @@ input[type=radio] {
     height: 12px;
     top: 50%;
     left: 4px;
-    background-color: #6fc754;
+    background-color: #00bcd4;
     border-radius: 50px;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -360,12 +360,12 @@ input[type=radio] {
 
 .radio-btn [type="radio"]:checked:focus + label:before,
 .radio-btn [type="radio"]:not(:checked):focus + label:before {
-    border: 1px dotted #6fc754;
+    border: 1px dotted #00bcd4;
 }
 
 .radio-btn [type="radio"]:checked + label:hover:before,
 .radio-btn [type="radio"]:not(:checked) + label:hover:before {
-    border: 1px solid #6fc754;
+    border: 1px solid #00bcd4;
 }
 
 /* Selectpicker */
@@ -437,7 +437,7 @@ select {
 }
 
 .bootstrap-select .selected {
-    color: #6fc754;
+    color: #00bcd4;
 }
 
 .bootstrap-select .check-mark {
@@ -459,8 +459,8 @@ select {
 
 .nav-tabs.tab-style > li.active > a,
 .nav-tabs.tab-style > li > a:hover {
-    border: 1px solid #6fc754;
-    background-color: #6fc754;
+    border: 1px solid #00bcd4;
+    background-color: #00bcd4;
     color: #fff;
 }
 
@@ -535,7 +535,7 @@ select {
 .accordion .panel-heading a.collapsed:hover,
 .accordion.accordion-gray .panel-heading a.collapsed:hover,
 .accordion .panel-heading a {
-    background-color: #6fc754;   
+    background-color: #00bcd4;   
     color: #fff; 
 }
 
@@ -911,7 +911,15 @@ html, body {
 .blog-hero {
     background: url(../img/blogs.png) no-repeat center / cover;     
 }
-
+.centers-hero {
+    background: url(https://th.bing.com/th/id/R.013c88272d56b0045837cb20e3e181c5?rik=IZIuJfdd6fllPw&pid=ImgRaw&r=0) no-repeat center / cover;     
+}
+.motivation-hero {
+    background: url('/img/motivation.png') no-repeat center / cover;     
+}
+.shop-hero{
+    background: url('https://th.bing.com/th/id/R.19c6b9a3410f40e37290d276033def19?rik=hMpdur0FNUWTtw&pid=ImgRaw&r=0') no-repeat center / cover;     
+}
 .contact-hero {
     background: url(../img/contact-hero.jpg) no-repeat center / cover;     
 }

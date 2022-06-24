@@ -27,3 +27,6 @@ Route::get('/contact',[UserController::class,'contactView']);
 Route::get('/portfolio',[UserController::class,'portfolioView']);
 Route::get('/blog-post',[UserController::class,'blogPostView']);
 Route::get('/jobs',[UserController::class,'jobsView']);
+Route::get('/centers&clinics',[UserController::class,'centers_clinicsView']);
+Route::get('/motivation',[UserController::class,'motivationView']);
+Route::get('/shop',[UserController::class,'shopView']);
