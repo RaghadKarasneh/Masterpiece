@@ -22,8 +22,8 @@
                 <ul class="portfolio-sorting list-inline text-center">
                     <li><a href="#" class="btn btn-gray active" data-group="all">All</a></li>
                     <li><a href="#" class="btn btn-gray" data-group="food">Foods</a></li>
-                    <li><a href="#" class="btn btn-gray" data-group="mobileapp">Drinks</a></li>
-                    <li><a href="#" class="btn btn-gray" data-group="illustration">Medical Equipments</a></li>
+                    <li><a href="#" class="btn btn-gray" data-group="drink">Drinks</a></li>
+                    <li><a href="#" class="btn btn-gray" data-group="medical">Medical Equipments</a></li>
                     {{-- <li><a href="#" class="btn btn-gray" data-group="branding">Branding</a></li>
                     <li><a href="#" class="btn btn-gray" data-group="photography">Photography</a></li> --}}
                 </ul><!-- /.portfolio-sorting  -->
@@ -39,116 +39,117 @@
                             <a href="./portfolio-item"><i class="fa fa-shopping-cart"></i> Add to cart</a>
                         </div><!-- /.portfolio-item -->
                     </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6" data-groups='["mobileapp"]'>
+                    <div class="col-lg-3 col-md-4 col-xs-6" data-groups='["medical"]'>
                         <div class="portfolio-item">
-                            <img src="/img/portfolio-2.jpg" class="img-res" alt="">
-                            <h3 class="portfolio-item-title">Easy Polo Black Edition
+                            <img src="https://img.crazysales.com.au/products_pictures/101/101445_555265_HD.jpg" class="img-res" alt="">
+                            <h3 class="portfolio-item-title">Equipment Knee Walker Scooter
                                 <br>
-                               <span> $56 </span>
+                               <span> 50 JOD </span>
                             </h3>
                             <a href="./portfolio-item"><i class="fa fa-shopping-cart"></i> Add to cart</a>
                         </div><!-- /.portfolio-item -->
                     </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6" data-groups='["illustration"]'>
+                    <div class="col-lg-3 col-md-4 col-xs-6" data-groups='["drink"]'>
                         <div class="portfolio-item">
-                            <img src="/img/portfolio-3.jpg" class="img-res" alt="">
-                            <h3 class="portfolio-item-title">Easy Polo Black Edition
+                            <img src="https://i5.walmartimages.com/asr/4a144abe-edc5-4e9b-a614-77456f0b8682.3040cc1fdddacfe3a29bb8301ff5c32d.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff" class="img-res" alt="">
+                            <h3 class="portfolio-item-title">Zico Coconut Water
                                 <br>
-                               <span> $56 </span>
+                               <span> 4 JOD </span>
+                            </h3>
+                            <a href="./portfolio-item"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6" data-groups='["drink"]'>
+                        <div class="portfolio-item">
+                            <img src="/img/shop/lemon.png" class="img-res" alt="">
+                            <h3 class="portfolio-item-title">Wholemeal Flour Blend
+                                <br>
+                               <span> 7 JOD </span>
+                            </h3>
+                            <a href="./portfolio-item"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6" data-groups='["medical"]'>
+                        <div class="portfolio-item">
+                            <img src="https://www.shower-buddy.com/wp-content/uploads/2020/05/Showerbuddy-SB1-07.jpg" class="img-res" alt="">
+                            <h3 class="portfolio-item-title">Mobility aid for step-in showers
+
+                                <br>
+                               <span> 70 JOD </span>
+                            </h3>
+                            <a href="./portfolio-item"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                            
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6" data-groups='["food"]'>
+                        <div class="portfolio-item">
+                            <img src="https://cdn.shopify.com/s/files/1/0280/1542/7668/products/CupcakeMix_510x.progressive.jpg?v=1625719476" class="img-res" alt="">
+                            <h3 class="portfolio-item-title">Gluten free cup cake mix 500gm
+                                <br>
+                               <span> 12 JOD </span>
                             </h3>
                             <a href="./portfolio-item"><i class="fa fa-shopping-cart"></i> Add to cart</a>
                         </div><!-- /.portfolio-item -->
                     </div>
                     <div class="col-lg-3 col-md-4 col-xs-6" data-groups='["food"]'>
                         <div class="portfolio-item">
-                            <img src="/img/shop/WholemealGlutenFreeFlourBlend.jpg" class="img-res" alt="">
-                            <h3 class="portfolio-item-title">Wholemeal Flour Blend
+                            <img src="https://cdn.shopify.com/s/files/1/0280/1542/7668/products/ChocolateCake_510x.progressive.jpg?v=1625719449" class="img-res" alt="">
+                            <h3 class="portfolio-item-title">Gluten free choclate cake mix 500gm
                                 <br>
-                               <span> 13 JOD </span>
+                               <span> 5 JOD </span>
                             </h3>
                             <a href="./portfolio-item"><i class="fa fa-shopping-cart"></i> Add to cart</a>
                         </div><!-- /.portfolio-item -->
                     </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6" data-groups='["photography"]'>
+                    <div class="col-lg-3 col-md-4 col-xs-6" data-groups='["drink"]'>
                         <div class="portfolio-item">
-                            <img src="/img/portfolio-5.jpg" class="img-res" alt="">
-                            <h3 class="portfolio-item-title">Easy Polo Black Edition
+                            <img src="https://secondstartplus.com/wp-content/uploads/2020/03/25495-3.jpg" class="img-res" alt="">
+                            <h3 class="portfolio-item-title">Cucumber Mint Cocktail  
                                 <br>
-                               <span> $56 </span>
-                            </h3>
-                            <a href="./portfolio-item"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                            
-                        </div><!-- /.portfolio-item -->
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6" data-groups='["illustration"]'>
-                        <div class="portfolio-item">
-                            <img src="/img/portfolio-6.jpg" class="img-res" alt="">
-                            <h3 class="portfolio-item-title">Easy Polo Black Edition
-                                <br>
-                               <span> $56 </span>
+                               <span> 6 JOD </span>
                             </h3>
                             <a href="./portfolio-item"><i class="fa fa-shopping-cart"></i> Add to cart</a>
                         </div><!-- /.portfolio-item -->
                     </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6" data-groups='["mobileapp"]'>
+                    <div class="col-lg-3 col-md-4 col-xs-6" data-groups='["medical"]'>
                         <div class="portfolio-item">
-                            <img src="/img/portfolio-7.jpg" class="img-res" alt="">
-                            <h3 class="portfolio-item-title">Easy Polo Black Edition
+                            <img src="https://cdn.shopify.com/s/files/1/0266/8563/products/THERA-Trainer-tigo_510_is_use_1400x.jpg?v=1576047456" class="img-res" alt="">
+                            <h3 class="portfolio-item-title"> Active and Passive exercise equipment
                                 <br>
-                               <span> $56 </span>
+                               <span> 100 JOD </span>
+                            </h3>
+                            <a href="./portfolio-item"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6" data-groups='["drink"]'>
+                        <div class="portfolio-item">
+                            <img src="https://i5.walmartimages.com/asr/213a36b7-dff0-491c-9856-4189b5d1f4e0.5cfcd7accee6b76fb84f306b9c67b809.jpeg" class="img-res" alt="">
+                            <h3 class="portfolio-item-title">Dark Chocolate Royal 
+                                <br>
+                               <span> 10 JOD </span>
                             </h3>
                             <a href="./portfolio-item"><i class="fa fa-shopping-cart"></i> Add to cart</a>
                         </div><!-- /.portfolio-item -->
                     </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6" data-groups='["uiux"]'>
+                    {{-- <div class="col-lg-3 col-md-4 col-xs-6" data-groups='["branding"]'>
                         <div class="portfolio-item">
-                            <img src="/img/portfolio-8.jpg" class="img-res" alt="">
-                            <h3 class="portfolio-item-title">Easy Polo Black Edition
-                                <br>
-                               <span> $56 </span>
-                            </h3>
-                            <a href="./portfolio-item"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                        </div><!-- /.portfolio-item -->
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6" data-groups='["mobileapp"]'>
-                        <div class="portfolio-item">
-                            <img src="/img/portfolio-9.jpg" class="img-res" alt="">
-                            <h3 class="portfolio-item-title">Easy Polo Black Edition
-                                <br>
-                               <span> $56 </span>
-                            </h3>
-                            <a href="./portfolio-item"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6" data-groups='["photography"]'>
-                        <div class="portfolio-item">
-                            <img src="/img/portfolio-10.jpg" class="img-res" alt="">
+                            <img src="https://cdn.shopify.com/s/files/1/0266/8563/products/THERA-Trainer-tigo_510_is_use_1400x.jpg?v=1576047456" class="img-res" alt="">
                             <h3 class="portfolio-item-title">Easy Polo Black Edition
                                 <br>
                                <span> $56 </span>
                             </h3>
                             <a href="./portfolio-item"><i class="fa fa-shopping-cart"></i> Add to cart</a>
                         </div><!-- /.portfolio-item -->
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6" data-groups='["branding"]'>
+                    </div> --}}
+                    {{-- <div class="col-lg-3 col-md-4 col-xs-6" data-groups='["food"]'>
                         <div class="portfolio-item">
-                            <img src="/img/portfolio-11.jpg" class="img-res" alt="">
-                            <h3 class="portfolio-item-title">Easy Polo Black Edition
+                            <img src="https://cdn.shopify.com/s/files/1/0280/1542/7668/products/ChocolateCake_510x.progressive.jpg?v=1625719449" class="img-res" alt="">
+                            <h3 class="portfolio-item-title">Gluten free choclate cake mix 500gm
                                 <br>
-                               <span> $56 </span>
+                               <span> 3 JOD</span>
                             </h3>
                             <a href="./portfolio-item"><i class="fa fa-shopping-cart"></i> Add to cart</a>
                         </div><!-- /.portfolio-item -->
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6" data-groups='["webdesign"]'>
-                        <div class="portfolio-item">
-                            <img src="/img/portfolio-12.jpg" class="img-res" alt="">
-                            <h3 class="portfolio-item-title">Easy Polo Black Edition
-                                <br>
-                               <span> $56 </span>
-                            </h3>
-                            <a href="./portfolio-item"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                        </div><!-- /.portfolio-item -->
-                    </div>
+                    </div> --}}
                 </div>
                 </div>
                 <div class="text-center">
