@@ -30,3 +30,6 @@ Route::get('/jobs',[UserController::class,'jobsView']);
 Route::get('/centers&clinics',[UserController::class,'centers_clinicsView']);
 Route::get('/motivation',[UserController::class,'motivationView']);
 Route::get('/shop',[UserController::class,'shopView']);
+Route::get('/cart',[UserController::class,'cartView']);
+Route::get('/checkout',[UserController::class,'checkoutView']);
+Route::get('/bill',[UserController::class,'billView']);

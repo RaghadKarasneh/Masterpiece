@@ -148,7 +148,15 @@
                             </ul>
 
                         </li>
-                        <li><a href="./shop">Shop</a></li>
+                        <li><a href="./shop">Shop
+                          {{-- <i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i> --}}
+                        </a>
+
+                          {{-- <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li><a href="./jobs">Foods & Drinks</a></li>
+                            <li><a href="./blog">Medical Equipments</a></li>
+                          </ul> --}}
+                        </li>
                         {{-- <li><a href="./blog">Blog</a></li> --}}
                         <li><a href="./contact">Contact</a></li>
                         {{-- <li><a href="ui-elements.html">UI Elements</a></li> --}}

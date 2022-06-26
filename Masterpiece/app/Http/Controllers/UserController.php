@@ -49,4 +49,16 @@ class UserController extends Controller
     public function shopView(){
         return view('shop');
     }
+    //View Cart Page
+    public function cartView(){
+        return view('cart');
+    }
+    //View Checkout Page
+    public function checkoutView(){
+        return view('checkout');
+    }
+     //View Bill Page
+     public function billView(){
+        return view('bill');
+    }
 }

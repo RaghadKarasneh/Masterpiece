@@ -1,0 +1,15 @@
+.card{
+    margin: 200px auto;
+}
+h2{
+    margin-bottom: 70px;
+}
+.card .container{
+    width: 50%;
+}
+.card-body ul li{
+    font-size: 17px;
+}
+p{
+    color: black !important;
+}
