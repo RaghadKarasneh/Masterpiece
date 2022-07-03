@@ -15,6 +15,9 @@ class CreateJobsCommentsTable extends Migration
     {
         Schema::create('jobs__comments', function (Blueprint $table) {
             $table->id();
+            $table->integer('job_id');
+            $table->integer('user_id');
+            $table->string('comment');
             $table->timestamps();
         });
     }

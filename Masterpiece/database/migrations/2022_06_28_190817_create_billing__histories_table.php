@@ -15,6 +15,7 @@ class CreateBillingHistoriesTable extends Migration
     {
         Schema::create('billing__histories', function (Blueprint $table) {
             $table->id();
+            $table->integer('user_id');
             $table->timestamps();
         });
     }

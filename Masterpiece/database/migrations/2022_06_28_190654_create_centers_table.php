@@ -15,6 +15,13 @@ class CreateCentersTable extends Migration
     {
         Schema::create('centers', function (Blueprint $table) {
             $table->id();
+            $table->string('center_name');
+            $table->string('description');
+            $table->string('email');
+            $table->integer('phone_number');
+            $table->string('instagram');
+            $table->string('whatsapp');
+            $table->string('facebook');
             $table->timestamps();
         });
     }
