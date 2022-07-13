@@ -159,6 +159,34 @@
                         </li>
                         {{-- <li><a href="./blog">Blog</a></li> --}}
                         <li><a href="./contact">Contact</a></li>
+                      
+                            
+
+                            {{-- @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li>
+                            @endif --}}
+                            
+                            @if (Route::has('login'))
+                            @auth
+                            <div class=" fixed top-0 px-6 py-4 sm:block ">
+                                {{-- <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"> --}}
+                                <a href="{{ url('/profile') }}" class="dropdown-item nav-item nav-link"><i class="fa-solid fa-user text-primary mx-3 " style="font-size: 28px"></i></a>
+                                {{-- </div> --}}
+                            </div>
+                            @else
+                                {{-- <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a> --}}
+                            <div class=" fixed top-0 right-0 px-6 py-4 sm:block">
+                                <a href="{{ route('login') }}" class="btn btn-primary pt-4 px-lg-5 d-none d-lg-block">Join Us<i class="fa fa-arrow-right ms-3"></i></a>
+                            </div>
+                
+                                {{-- @if (Route::has('register'))
+                                    <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
+                                @endif --}}
+                            @endauth
+                            @endif
+                       
                         {{-- <li><a href="ui-elements.html">UI Elements</a></li> --}}
 
                     </ul>

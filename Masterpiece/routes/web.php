@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
-
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,3 +33,8 @@ Route::get('/shop',[UserController::class,'shopView']);
 Route::get('/cart',[UserController::class,'cartView']);
 Route::get('/checkout',[UserController::class,'checkoutView']);
 Route::get('/bill',[UserController::class,'billView']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/profile', [App\Http\Controllers\HomeController::class, 'profile'])->name('home');

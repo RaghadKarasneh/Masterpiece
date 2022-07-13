@@ -8,7 +8,7 @@ class UserController extends Controller
 {    
     // View Home Page
     public function homePageView(){
-        return view('home');
+        return view('index');
     }
     public function imgView(){
         return view('img/logo');
