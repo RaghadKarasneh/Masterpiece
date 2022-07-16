@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\BlogsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,7 +22,7 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/',[UserController::class,'homePageView']);
 Route::get('img/logo',[UserController::class,'imgView'])->name('img.displayImage');
-Route::get('/blog',[UserController::class,'blogView']);
+Route::get('/blog',[BlogsController::class,'blogView']);
 Route::get('/experiences',[UserController::class,'experiencesView']);
 Route::get('/contact',[UserController::class,'contactView']);
 Route::get('/portfolio',[UserController::class,'portfolioView']);
