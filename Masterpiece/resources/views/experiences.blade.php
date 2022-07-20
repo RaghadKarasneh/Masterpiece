@@ -17,32 +17,89 @@
 
     <main id="main" class="site-main">
 
-        <section class="site-section subpage-site-section section-blog">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8">
-                        <article class="blog-post">
-                            <img src="/img/experiences/down-experiance.png" class="img-res" alt="">
-                            <div class="post-content">
-                                <h2 class="post-title">12 Essential Free Sketch Plugins</h2>
-                                <p>Sketch Measure helps designers organize and outline their work for developers, project managers, and other team members.</p>
-                                <p>But this is also incredibly useful to lone wolves who design & code all of their projects. With the Measure plugin you can outline elements showing specific width/height dimensions to get proper measurements at a glance.</p>
-                                <p>This includes all page elements like buttons, text, icons, and even major parts of the artboard. With Sketch Measure you can even export pages into HTML/CSS with page styles in-tact. Granted there are Adobe tools that can do this too. But having all this functionality right in Sketch makes your job that much easier.</p>
-  
-                                <div class="post-meta">
-                                    <span class="post-author">
-                                        <a href="#"><img class="img-res" src="/img/author.jpg" alt=""> John Smith</a>
-                                    </span>
-                                    <span class="post-date">
-                                        <a href=""><i class="fa fa-calendar" aria-hidden="true"></i> September 21, 2016</a>
-                                        </span>
-                                    <span class="post-category">
-                                        <a href=""><i class="fa fa-folder" aria-hidden="true"></i> Web Design</a>
-                                    </span>
-                                </div><!-- /.post-meta -->
-                            </div><!-- /.post-content -->
-                        </article><!-- /.blog-post -->
-                        <div id="PostComments" class="post-comments">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Dashboard</div>
+        
+                        <div class="panel-body">
+                            @if (session('status'))
+                                <div class="alert alert-success">
+                                    {{ session('status') }}
+                                </div>
+                            @endif
+                            <form id="comment-form" method="get" action="{{ route('comments.store') }}" >
+                                {{ csrf_field() }}
+                                <input type="hidden" name="user_id" value="{{ Auth::user()->id }}" >
+                                <div class="row" style="padding: 10px;">
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="comment" placeholder="Write something from your heart..!"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row" style="padding: 0 10px 0 10px;">
+                                    <div class="form-group">
+                                        <input type="submit" class="btn btn-primary btn-lg" style="width: 100%" name="submit">
+                                    </div>
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                 <div class="col-md-8 col-md-offset-2">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Comments</div>
+        
+                        <div class="panel-body comment-container" >
+                            
+                            @foreach($comments as $comment)
+                                <div class="well">
+                                    <i><b> {{ $comment->first_name }} {{ $comment->last_name }}</b></i>&nbsp;&nbsp;
+                                    <span> {{ $comment->comment }} </span>
+                                    <div style="margin-left:10px;">
+                                        <a style="cursor: pointer;" cid="{{ $comment->id }}" name_a="{{ Auth::user()->first_name }} {{ Auth::user()->last_name }}" token="{{ csrf_token() }}" class="reply">Reply</a>&nbsp;
+                                        <a style="cursor: pointer;"  class="delete-comment" token="{{ csrf_token() }}" comment-did="{{ $comment->id }}" >Delete</a>
+                                        <div class="reply-form">
+                                            
+                                            <!-- Dynamic Reply form -->
+                                            
+                                        </div>
+                                        {{-- @foreach($comment->replies as $rep)
+                                             @if($comment->id === $rep->comment_id)
+                                                <div class="well">
+                                                    <i><b> {{ $rep->first_name }} {{ $rep->last_name }}</b></i>&nbsp;&nbsp;
+                                                    <span> {{ $rep->reply }} </span>
+                                                    <div style="margin-left:10px;">
+                                                        <a rname="{{ Auth::user()->first_name }}{{ Auth::user()->last_name }}" rid="{{ $comment->id }}" style="cursor: pointer;" class="reply-to-reply" token="{{ csrf_token() }}">Reply</a>&nbsp;<a did="{{ $rep->id }}" class="delete-reply" token="{{ csrf_token() }}" >Delete</a>
+                                                    </div>
+                                                    <div class="reply-to-reply-form">
+                                            
+                                                        <!-- Dynamic Reply form -->
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+                                            @endif 
+                                        @endforeach --}}
+                                        
+                                    </div>
+                                </div>
+                            @endforeach
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+           
+        
+        </div>
+                        <!-- /.respond -->
+                        {{-- <div id="PostComments" class="post-comments">
                             <h3>3 Comments</h3>
                             <div class="post-comment">
 
@@ -61,8 +118,8 @@
                                         <a href="#">Reply</a>
                                     </div>
                                         
-                                </div><!-- /.post-comment-content --> 
-                            </div><!-- /.post-comment --> 
+                                </div><!-- /.post-comment-content -->  --}}
+                            {{-- </div><!-- /.post-comment --> 
                             <div class="replied">
                                 <div class="post-comment">
 
@@ -104,15 +161,7 @@
                                 </div><!-- /.post-comment-content --> 
                             </div><!-- /.post-comment --> 
                         </div><!-- /#PostComments -->
-                        <div class="respond">
-                            <h3>Post a Comment</h3>
-                            <form class="form-horizontal">
-                                <input class="form-control" type="text" placeholder="Your Name*" required>
-                                <input class="form-control" type="email" placeholder="Your Email" required>
-                                <textarea class="form-control form-control-comment" type="text" placeholder="Your Comment*" required></textarea>
-                                <button class="btn btn-green">Add a comment</button>
-                            </form>    
-                        </div><!-- /.respond -->
+                  --}}
                     </div>
                     <aside class="col-md-4">
                         <div class="sidebar">

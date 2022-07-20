@@ -1,10 +1,17 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\BlogsController;
+use App\Http\Controllers\ExperienceCommentsController;
+use App\Http\Controllers\ExperienceRepliesController;
+use App\Http\Controllers\ExperiencesController;
+use App\Models\ExperienceComments;
 /*
+
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
@@ -39,3 +46,6 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/profile', [App\Http\Controllers\HomeController::class, 'profile'])->name('home');
+Route::get('/experiences',[ExperiencesController::class,'index']);
+Route::get('/comments',[ExperienceCommentsController::class,'store'])->name('comments.store');;
+Route::get('/replies',[ExperienceRepliesController::class,'store']);

@@ -92,6 +92,8 @@
     <!-- Stylesheets
     ================================================== -->
     <!-- Bootstrap core CSS -->
+    <!-- CSS only -->
+
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 
    

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\ExperienceComments;
 
 class UserController extends Controller
 {    
@@ -23,7 +24,8 @@ class UserController extends Controller
     }
     // View Experiences Page
     public function experiencesView(){
-        return view('experiences');
+        // $comments = ExperienceComments::latest('created_at')->get();
+        // return view('experiences', ['comments' => $comments]);
     }
     // View Contact Page
     public function contactView(){

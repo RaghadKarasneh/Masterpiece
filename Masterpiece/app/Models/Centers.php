@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Centers extends Model
 {
     use HasFactory;
+    protected $table = 'centers';
 }
