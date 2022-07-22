@@ -37,13 +37,13 @@ class ExperienceCommentsController extends Controller
     public function store(Request $request)
     {
         if (Auth::check()) {
-            ExperienceComments::create([
-                'user_id' => Auth::user()->id,
-                'first_name' => Auth::user()->first_name,
-                'last_name' => Auth::user()->last_name,
-                'comment' => $request->input('comment'),
-                
-            ]);
+                $add=new ExperienceComments();
+                $add->user_id = Auth::user()->id;
+                $add->first_name = Auth::user()->first_name;
+                $add->last_name= Auth::user()->last_name;
+                $add->comment= $request->input('comment');
+                $add->save();
+            
 
             return redirect()->route('home')->with('success','Comment Added successfully..!');
         }else{

@@ -34,7 +34,7 @@
                                 <input type="hidden" name="user_id" value="{{ Auth::user()->id }}" >
                                 <div class="row" style="padding: 10px;">
                                     <div class="form-group">
-                                        <textarea class="form-control" name="comment" placeholder="Write something from your heart..!"></textarea>
+                                        <input class="form-control" name="comment" placeholder="Write something from your heart..!">
                                     </div>
                                 </div>
                                 <div class="row" style="padding: 0 10px 0 10px;">
@@ -53,12 +53,12 @@
                  <div class="col-md-8 col-md-offset-2">
                     <div class="panel panel-default">
                         <div class="panel-heading">Comments</div>
-        
+                       
                         <div class="panel-body comment-container" >
                             
                             @foreach($comments as $comment)
                                 <div class="well">
-                                    <i><b> {{ $comment->first_name }} {{ $comment->last_name }}</b></i>&nbsp;&nbsp;
+                                    <i><b> {{ Auth::user()->first_name }} {{ Auth::user()->last_name }}</b></i>&nbsp;&nbsp;
                                     <span> {{ $comment->comment }} </span>
                                     <div style="margin-left:10px;">
                                         <a style="cursor: pointer;" cid="{{ $comment->id }}" name_a="{{ Auth::user()->first_name }} {{ Auth::user()->last_name }}" token="{{ csrf_token() }}" class="reply">Reply</a>&nbsp;
