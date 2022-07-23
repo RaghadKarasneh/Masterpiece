@@ -91,7 +91,7 @@ class ExperienceCommentsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\c  $c
+     * @param  \App\Models\ExperienceComments $comment
      * @return \Illuminate\Http\Response
      */
     public function destroy(ExperienceComments $comment)

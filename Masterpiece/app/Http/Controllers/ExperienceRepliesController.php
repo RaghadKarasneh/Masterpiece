@@ -79,7 +79,7 @@ else
      * @param  \App\Models\ExperiencesReplies  $reply
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Reply $reply)
+    public function update(Request $request, ExperiencesReplies $reply)
     {
         //
     }
@@ -87,7 +87,7 @@ else
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\c  $c
+     * @param  \App\Models\ExperiencesReplies $reply
      * @return \Illuminate\Http\Response
      */
     public function destroy(ExperiencesReplies $reply)

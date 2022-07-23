@@ -65,7 +65,7 @@
                                         <a style="cursor: pointer;" cid="{{ $comment->id }}" name_a="{{ Auth::user()->first_name }} {{ Auth::user()->last_name }}" token="{{ csrf_token() }}" class="reply">Reply</a>&nbsp;
                                         <a style="cursor: pointer;"  class="delete-comment" token="{{ csrf_token() }}" comment-did="{{ $comment->id }}" >Delete</a>
                                         <div class="reply-form">
-                                            
+{{--                                             
                                             <form id="reply-form" method="get" action="{{ route('replay.store') }}" >
                                                 {{ csrf_field() }} 
                                                 <input type="hidden" name="comment_id" value="{{ $comment->id }}" >
@@ -81,7 +81,7 @@
                                                     </div>
                                                 </div>
                                             </form>
-                                            
+                                             --}}
                                         </div>
                                         
                                         @foreach($replies as $rep) 
@@ -227,5 +227,7 @@
 
     </main><!-- /#main -->
 
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="{{ asset('/js/comment_replay.js') }}"></script>
 @endsection
+
