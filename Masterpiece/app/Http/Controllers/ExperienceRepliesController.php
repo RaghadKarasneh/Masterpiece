@@ -36,17 +36,17 @@ class ExperienceRepliesController extends Controller
     public function store(Request $request)
     {
         if (Auth::check()) {
-            ExperiencesReplies::create([
-                'comment_id' => $request->input('comment_id'),
-                'first_name' => $request->input('first_name'),
-                'last_name' => $request->input('last_name'),
-                'reply' => $request->input('reply'),
-                'user_id' => Auth::user()->id
-            ]);
-
-            return redirect()->route('home')->with('success','Reply added');
+           $reply= new ExperiencesReplies();
+           $reply->comment_id= $request->input('comment_id');
+           $reply->first_name =Auth::user()->first_name;
+           $reply->last_name =Auth::user()->last_name;
+           $reply->reply = $request->input('reply');
+           $reply->user_id = Auth::user()->id;
+           $reply->save();
+        
+           return redirect()->route('home')->with('success','Comment Added successfully..!');
         }
-
+else
         return back()->withInput()->with('error','Something wrong');
     }
 

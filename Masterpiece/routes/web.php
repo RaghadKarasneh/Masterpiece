@@ -47,5 +47,5 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/profile', [App\Http\Controllers\HomeController::class, 'profile'])->name('home');
 Route::get('/experiences',[ExperiencesController::class,'index']);
-Route::get('/comments',[ExperienceCommentsController::class,'store'])->name('comments.store');;
-Route::get('/replies',[ExperienceRepliesController::class,'store']);
+Route::get('/comments',[ExperienceCommentsController::class,'store'])->name('comments.store');
+Route::get('/replies',[ExperienceRepliesController::class,'store'])->name('replay.store');

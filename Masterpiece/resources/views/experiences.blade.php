@@ -34,7 +34,7 @@
                                 <input type="hidden" name="user_id" value="{{ Auth::user()->id }}" >
                                 <div class="row" style="padding: 10px;">
                                     <div class="form-group">
-                                        <input class="form-control" name="comment" placeholder="Write something from your heart..!">
+                                        <input class="form-control" name="comment"  placeholder="Write something from your heart..!">
                                     </div>
                                 </div>
                                 <div class="row" style="padding: 0 10px 0 10px;">
@@ -58,6 +58,7 @@
                             
                             @foreach($comments as $comment)
                                 <div class="well">
+                                   
                                     <i><b> {{ Auth::user()->first_name }} {{ Auth::user()->last_name }}</b></i>&nbsp;&nbsp;
                                     <span> {{ $comment->comment }} </span>
                                     <div style="margin-left:10px;">
@@ -65,10 +66,26 @@
                                         <a style="cursor: pointer;"  class="delete-comment" token="{{ csrf_token() }}" comment-did="{{ $comment->id }}" >Delete</a>
                                         <div class="reply-form">
                                             
-                                            <!-- Dynamic Reply form -->
+                                            <form id="reply-form" method="get" action="{{ route('replay.store') }}" >
+                                                {{ csrf_field() }} 
+                                                <input type="hidden" name="comment_id" value="{{ $comment->id }}" >
+                                                <input type="hidden" name="user_id" value="{{ Auth::user()->id }}" >
+                                                <div class="row" style="padding: 10px;">
+                                                    <div class="form-group">
+                                                        <input class="form-control" name="reply" cid="{{ $comment->id }} placeholder="Write something from your heart..!">
+                                                    </div>
+                                                </div>
+                                                <div class="row" style="padding: 0 10px 0 10px;">
+                                                    <div class="form-group">
+                                                        <input type="submit" class="btn btn-primary btn-lg" style="width: 100%" name="submit">
+                                                    </div>
+                                                </div>
+                                            </form>
                                             
                                         </div>
-                                        {{-- @foreach($comment->replies as $rep)
+                                        
+                                        @foreach($replies as $rep) 
+                                       
                                              @if($comment->id === $rep->comment_id)
                                                 <div class="well">
                                                     <i><b> {{ $rep->first_name }} {{ $rep->last_name }}</b></i>&nbsp;&nbsp;
@@ -84,7 +101,7 @@
                                                     
                                                 </div>
                                             @endif 
-                                        @endforeach --}}
+                                        @endforeach
                                         
                                     </div>
                                 </div>
