@@ -41,8 +41,8 @@ $(document).ready(function(){
         var cid = $(this).attr("rid");
         var rname = $(this).attr("rname");
         var token = $(this).attr("token")
-        var form = '<form method="get" action="/replies"><input type="hidden" name="_token" value="'+token+'"><input type="hidden" name="comment_id" value="'+ cid +'"><input type="hidden" name="name" value="'+rname+'"><div class="form-group"><textarea class="form-control" name="reply" placeholder="Enter your reply" > </textarea> </div> <div class="form-group"> <input class="btn btn-primary" type="submit"> </div></form>';
-
+        var form = '<form method="get" action="/replies" ><input type="hidden" name="_token" value="'+token+'"><input type="hidden" name="comment_id" value="'+ cid +'"><input type="hidden" name="name" value="'+rname+'"><div class="form-group"><textarea class="form-control textarea-height" name="reply" placeholder="Enter your reply"  > </textarea> </div> <div class="form-group"> <input class="btn btn-primary" type="submit"> </div></form>';
+     
         well.find(".reply-to-reply-form").append(form);
 
     });

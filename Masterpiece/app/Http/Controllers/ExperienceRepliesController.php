@@ -44,7 +44,7 @@ class ExperienceRepliesController extends Controller
            $reply->user_id = Auth::user()->id;
            $reply->save();
         
-           return redirect()->route('home')->with('success','Comment Added successfully..!');
+           return redirect()->route('experiences')->with('success','Comment Added successfully..!');
         }
 else
         return back()->withInput()->with('error','Something wrong');
@@ -90,18 +90,18 @@ else
      * @param  \App\Models\ExperiencesReplies $reply
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ExperiencesReplies $reply)
-    {
-        if (Auth::check()) {
-            $reply = ExperiencesReplies::where(['id'=>$reply->id,'user_id'=>Auth::user()->id]);
-            if ($reply->delete()) {
-                return 1;
-            }else{
-                return 2;
-            }
-        }else{
+    // public function destroy(ExperiencesReplies $reply)
+    // {
+    //     if (Auth::check()) {
+    //         $reply = ExperiencesReplies::where(['id'=>$reply->id,'user_id'=>Auth::user()->id]);
+    //         if ($reply->delete()) {
+    //             return 1;
+    //         }else{
+    //             return 2;
+    //         }
+    //     }else{
 
-        }
-        return 3;
-    }
+    //     }
+    //     return 3;
+    // }
 }

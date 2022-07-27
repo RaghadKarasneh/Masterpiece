@@ -25,10 +25,11 @@ class ExperiencesController extends Controller
      */
     public function index()
     {
-        $comments = ExperienceComments::latest('created_at')->get();
-        $replies = ExperiencesReplies::latest('created_at')->get();
+
+        $comments = ExperienceComments::where('is_deleted',0)->latest('created_at')->get();
+        $replies = ExperiencesReplies::where('is_deleted',0)->latest('created_at')->get();
         return view('experiences', ['comments' => $comments, 'replies'=>$replies]);
-    }
+    
 
     /* */
-}
+}}

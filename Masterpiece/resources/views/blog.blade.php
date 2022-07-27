@@ -40,9 +40,6 @@
                                     <span class="post-author text-right">
                                         <a class="read-more" href={{$value->blog_body}} target="_blank">Read more</a>
                                     </span>
-                                    {{-- <span class="post-category">
-                                        <a href=""><i class="fa fa-folder" aria-hidden="true"></i>Web Design</a>
-                                    </span> --}}
                                 </div><!-- /.post-meta -->
                             </div><!-- /.post-content -->
                         </article><!-- /.blog-post -->
@@ -51,16 +48,10 @@
                     </div>
                 <div class="text-center">
                             <a class="btn btn-gray" href="#" id="loadMore">Load More</a>
-                        </div></div>
+                        </div>
+                    </div>
                     <aside class="col-lg-3 col-md-4">
                         <div class="sidebar">
-                            {{-- <div class="widget search-form">
-                                <h4 class="widget-title">Search the blog</h4>
-                                <form class="form-group">
-                                    <input type="text" class="form-control" placeholder="Search" required>
-                                    <button class="btn btn-green" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
-                                </form>
-                            </div><!-- /.search-form --> --}}
                             <div class="widget widget-recent-posts">
                                 <h4 class="widget-title">Blogs Categories</h4>
                                 <ul class="list-unstyled portfolio-sorting">

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateExperiencesRepliesTable extends Migration
+class ExperiencesComments extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,14 @@ class CreateExperiencesRepliesTable extends Migration
      */
     public function up()
     {
-        Schema::create('experiences_replies', function (Blueprint $table) {
+        Schema::create('experience_comments', function (Blueprint $table) {
             $table->id();
-            $table->integer('comment_id');
             $table->integer('user_id');
             $table->string('first_name');
             $table->string('last_name');
-            $table->string('reply');
+            $table->string('comment');
+            $table->string('special_type');
+            $table->integer('is_deleted');
             $table->timestamps();
         });
     }
@@ -31,6 +32,6 @@ class CreateExperiencesRepliesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('experiences_replies');
+        //
     }
 }

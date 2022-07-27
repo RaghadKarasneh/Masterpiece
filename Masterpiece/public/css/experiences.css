@@ -9,3 +9,47 @@
     color: #00bcd4 !important;
     font-weight: 700;
 }
+select{
+    position: relative !important;
+    left: unset;
+    top: unset;
+    width: auto !important;
+    opacity: 1 !important;
+    margin: 20px 20px 0 20px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 20px;
+    padding: 7px 20px !important;
+}
+.form-group .btn{
+    width: 20% !important;
+    margin: 20px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 20px;
+    padding: 0px 20px !important;
+    color: #fff;
+    float: right;
+    position: unset !important;
+    top: unset !important;
+    right: unset !important;
+}
+.form-group textarea{
+    margin: 20px;
+}
+.well{
+margin: 50px 0px 0px;
+position: relative !important;
+top: 0!important;
+left: 0!important;
+}
+.form-reply{
+    height: 130px !important
+}
+.portfolio-sorting li .active{
+    background-color: unset !important;
+    color: #00bcd4;
+}
+.form-group{
+    height: 60px !important;
+}

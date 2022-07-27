@@ -46,7 +46,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/profile', [App\Http\Controllers\HomeController::class, 'profile'])->name('home');
-Route::get('/experiences',[ExperiencesController::class,'index']);
+Route::get('/experiences',[ExperiencesController::class,'index'])->name('experiences');
 Route::get('/comments',[ExperienceCommentsController::class,'store'])->name('comments.store');
 Route::get('/replies',[ExperienceRepliesController::class,'store']);
 Route::get('/delete_comments/{id}',[ExperienceCommentsController::class,'destroy']);

@@ -42,10 +42,11 @@ class ExperienceCommentsController extends Controller
                 $add->first_name = Auth::user()->first_name;
                 $add->last_name= Auth::user()->last_name;
                 $add->comment= $request->input('comment');
+                $add->special_type= $request->input('special_type');
                 $add->save();
             
 
-            return redirect()->route('home')->with('success','Comment Added successfully..!');
+            return redirect()->route('experiences')->with('success','Comment Added successfully..!');
         }else{
             return back()->withInput()->with('error','Something wrong');
         }
@@ -94,23 +95,24 @@ class ExperienceCommentsController extends Controller
      * @param  \App\Models\ExperienceComments $comment
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ExperienceComments $comment)
-    {
-        if (Auth::check()) {
+    // public function destroy(ExperienceComments $comment)
+    // {
+    //     if (Auth::check()) {
 
-            $reply = ExperienceReplies::where(['comment_id'=>$comment->id]);
-            $comment = ExperienceComments::where(['user_id'=>Auth::user()->id, 'id'=>$comment->id]);
-            if ($reply->count() > 0 && $comment->count() > 0) {
-                $reply->delete();
-                $comment->delete();
-                return 1;
-            }else if($comment->count() > 0){
-                $comment->delete();
-                return 2;
-            }else{
-                return 3;
-            }
+    //         $reply = ExperienceReplies::where(['comment_id'=>$comment->id]);
+    //         $comment = ExperienceComments::where(['user_id'=>Auth::user()->id, 'id'=>$comment->id]);
+    //         if ($reply->count() > 0 && $comment->count() > 0) {
+    //             $reply->delete();
+    //             $comment->delete();
+    //             // $reply->is_deleted= 1;
+    //             DB::update('update experience_comments set is_deleted =? where id = ?', [1, $comment->id]);
+    //         }else if($comment->count() > 0){
+    //             $comment->delete();
+    //             return 2;
+    //         }else{
+    //             return 3;
+    //         }
 
-        }   
-    }
+    //     }   
+    // }
 }
